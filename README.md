@@ -7,28 +7,21 @@ Durante la creacion del proyecto especificamos que vamos a trabajar con rutas `n
 
 1. Se importan los componentes que querimos mostror en el archivo `app-routing.module.ts` ejemplo:
 
-`
-import { HomeComponent } from "./components/home/home.component";
+` import { HomeComponent } from "./components/home/home.component";
 import { LoginComponent } from "./components/login/login.component";
 import { RegisterComponent } from "./components/register/register.component";
 import { DevicesComponent }  from "./components/devices/devices.component";
-import { NotFoundPageComponent } from "./components/not-found-page/not-found-page.component";
+import { NotFoundPageComponent } from "./components/not-found-page/not-found-page.component"; `
 
-`
-2. en la cosntante `routes`agregamos la direccion (path) y el componente a renderizar. ejemplo:
+2. en la cosntante `routes` agregamos la direccion (path) y el componente a renderizar. ejemplo:
 
-`
-const routes: Routes = [
+`  const routes: Routes = [
   {path: '', component:HomeComponent},
   {path: 'login', component:LoginComponent},
   {path: 'register', component:RegisterComponent},
   {path: 'devices', component:DevicesComponent},
   {path: '**', component:NotFoundPageComponent}
-
-];
-
-
-`
+]; `
 
 
 
