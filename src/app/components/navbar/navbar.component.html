@@ -20,6 +20,13 @@
       <li class="nav-item" *ngIf="isLogin">
         <a class="nav-link" href="#" (click)="onClickLogout()">Salir</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link">{{userName}}</a>
+      </li>
+      <li class="nav-item"*ngIf="isLogin">
+        <img src="{{profilePic}}" class="rounded-circle">
+        <span class="badge badge pill badge-secundary">{{userEmail}}</span>
+      </li>
     </ul>
 
 
