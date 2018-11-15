@@ -24,7 +24,9 @@ import { NotFoundPageComponent } from "./components/not-found-page/not-found-pag
 ]; `
 
 
+# Guards
 
+Guards se utilisan para proteger el acceso a una determinada ruta. ejecuantando el comando ` ng g guard nombreDelGuard ` dentro del componente route se asigna la ruta a porteger agregando el parametro ` canActivate: [AuthGuard] ` no olvidad importar el compnente Gruad
 
 
 
